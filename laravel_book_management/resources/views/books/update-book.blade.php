@@ -12,27 +12,27 @@
 @section('content')
     <div class="container">
         <h1>Form update book</h1>
-        <form method="post" action="{{Route('books.updateBook', $book['id'])}}" enctype="multipart/form-data">
+        <form method="post" action="{{Route('books.updateBook', $book->id)}}" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label>Book name</label>
-                <input type="text" name="name" value="{{$book['name']}}" class="form-control" placeholder="Book name">
+                <input type="text" name="name" value="{{$book->name}}" class="form-control" placeholder="Book name">
             </div>
             <div class="form-group">
                 <label>Author</label>
-                <input type="text" name="author" value="{{$book['author']}}" class="form-control" placeholder="Author">
+                <input type="text" name="author" value="{{$book->author}}" class="form-control" placeholder="Author">
             </div>
             <div class="form-group">
                 <label>Publisher</label>
-                <input type="text" name="publisher" value="{{$book['publisher']}}" class="form-control" placeholder="Publisher">
+                <input type="text" name="publisher" value="{{$book->publisher}}" class="form-control" placeholder="Publisher">
             </div>
             <div class="form-group">
                 <label>Amount</label>
-                <input type="text" name="amount" value="{{$book['amount']}}" class="form-control" placeholder="Amount">
+                <input type="text" name="amount" value="{{$book->amount}}" class="form-control" placeholder="Amount">
             </div>
             <div class="form-group">
                 <label>Price</label>
-                <input type="text" name="price" value="{{$book['price']}}" class="form-control" placeholder="Price">
+                <input type="text" name="price" value="{{$book->price}}" class="form-control" placeholder="Price">
             </div>
             <div class="form-group">
                 <label>Image</label>
@@ -40,13 +40,14 @@
             </div>
             <div class="form-group">
                 <label>Description</label>
-                <textarea name="desc" class="form-control" rows="3" placeholder="Description">{{$book['desc']}}</textarea>
+                <textarea name="desc" class="form-control" rows="3" placeholder="Description">{{$book->desc}}</textarea>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Type book</label>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
+                <select class="form-control" name="type_id">
+                    @foreach($types as $type)
+                    <option value="{{$type->id}}">{{$type->name}}</option>
+                    @endforeach
                 </select>
             </div>
             <button class="btn btn-primary" type="submit">Update Book</button>

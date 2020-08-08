@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class LayoutController extends Controller
 {
-    public function showDashboard(){
+    public function showDashboard()
+    {
         return view('dashboard');
     }
 }

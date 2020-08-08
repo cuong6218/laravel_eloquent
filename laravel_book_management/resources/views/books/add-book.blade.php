@@ -44,9 +44,10 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Type book</label>
-                    <select class="form-control">
-                        <option>1</option>
-                        <option>2</option>
+                    <select class="form-control" name="type_id">
+                        @foreach($types as $type)
+                        <option value="{{$type->id}}">{{$type->name}}</option>
+                        @endforeach
                     </select>
                 </div>
                 <button class="btn btn-primary" type="submit">Add Book</button>

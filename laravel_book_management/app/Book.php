@@ -7,4 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Book extends Model
 {
     protected $table = 'books';
+    function type(){
+        return $this->belongsTo(Type::class);
+    }
 }

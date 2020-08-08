@@ -30,6 +30,7 @@ class BookService
             $path = $image->store('images', 'public');
             $book->image = $path;
         }
+        $book->type_id = $request->type_id;
         $book->desc = $request->desc;
         $this->bookRepository->save($book);
     }
@@ -58,9 +59,9 @@ class BookService
             $path = $image->store('images', 'public');
             $book->image = $path;
         }
+        $book->type_id = $request->type_id;
         $book->desc = $request->desc;
         $this->bookRepository->save($book);
-//        return $this->bookRepository->update($request, $id);
     }
     function searchBook(Request $request){
         $option = $request->checkBook;
@@ -73,6 +74,9 @@ class BookService
                 break;
             case 'publisher':
                 return $this->bookRepository->searchByPublisher($request);
+                break;
+            case 'type':
+                return $this->bookRepository->searchByType($request);
                 break;
             default: return 'Book not found';
         }

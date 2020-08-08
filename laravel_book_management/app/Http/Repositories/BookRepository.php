@@ -4,13 +4,18 @@
 namespace App\Http\Repositories;
 
 use App\Book;
+use App\Type;
 use Illuminate\Http\Request;
 
 class BookRepository
 {
     protected $book;
-    function __construct(Book $book){
+    protected $type;
+    protected $typeRepository;
+    function __construct(Book $book, Type $type, TypeRepository $typeRepository){
         $this->book = $book;
+        $this->type = $type;
+        $this->typeRepository = $typeRepository;
     }
     function getAll(){
         return $this->book->select('*')->orderBy('id', 'desc')->get();
@@ -24,17 +29,6 @@ class BookRepository
     function getBookById($id){
         return $this->book->findOrFail($id);
     }
-//    function update(Request $request, $id){
-//        $this->book->where('id', $id)
-//            ->update(['name' => $request->name],
-//                            ['author' => $request->author],
-//                            ['publisher' => $request->publisher],
-//                            ['amount' => $request->amount],
-//                            ['image' => $request->image],
-//                            ['price' => $request->price],
-//                            ['desc' => $request->desc]);
-
-//    }
     function searchByName(Request $request){
         $keyword = $request->keyword;
         return Book::where('name', 'LIKE', '%'.$keyword.'%' )->get();
@@ -47,4 +41,10 @@ class BookRepository
         $keyword = $request->keyword;
         return Book::where('publisher', 'LIKE', '%'.$keyword.'%')->get();
     }
+    function searchByType(Request $request)
+    {
+        $type = $this->typeRepository->searchType($request);
+        return Book::where('id', $type->id);
+    }
+
 }

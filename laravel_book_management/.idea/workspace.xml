@@ -153,7 +153,11 @@
       <option name="presentableId" value="Default" />
       <updated>1596682930609</updated>
       <workItem from="1596682931704" duration="6579000" />
-      <workItem from="1596695479281" duration="13466000" />
+      <workItem from="1596695479281" duration="13831000" />
+      <workItem from="1596737161754" duration="1412000" />
+      <workItem from="1596767760984" duration="7979000" />
+      <workItem from="1596777667677" duration="4903000" />
+      <workItem from="1596787618587" duration="7979000" />
     </task>
     <servers />
   </component>
@@ -169,25 +173,25 @@
       <screen x="0" y="34" width="1600" height="990" />
     </state>
     <state x="393" y="190" width="804" height="683" key="#Options/0.34.1600.990@0.34.1600.990" timestamp="1596689232159" />
-    <state x="533" y="287" width="524" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596698587968">
+    <state x="533" y="287" width="524" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596781398423">
       <screen x="0" y="34" width="1600" height="990" />
     </state>
-    <state x="533" y="287" width="524" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.34.1600.990@0.34.1600.990" timestamp="1596698587968" />
-    <state x="470" y="248" width="657" height="567" key="NewPhpClassDialog" timestamp="1596687421875">
+    <state x="533" y="287" width="524" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.34.1600.990@0.34.1600.990" timestamp="1596781398423" />
+    <state x="470" y="248" width="657" height="567" key="NewPhpClassDialog" timestamp="1596781308296">
       <screen x="0" y="34" width="1600" height="990" />
     </state>
-    <state x="470" y="248" width="657" height="567" key="NewPhpClassDialog/0.34.1600.990@0.34.1600.990" timestamp="1596687421875" />
-    <state x="595" y="454" width="399" height="155" key="NewPhpFileDialog" timestamp="1596706771931">
+    <state x="470" y="248" width="657" height="567" key="NewPhpClassDialog/0.34.1600.990@0.34.1600.990" timestamp="1596781308296" />
+    <state x="595" y="454" width="399" height="155" key="NewPhpFileDialog" timestamp="1596788789371">
       <screen x="0" y="34" width="1600" height="990" />
     </state>
-    <state x="595" y="454" width="399" height="155" key="NewPhpFileDialog/0.34.1600.990@0.34.1600.990" timestamp="1596706771931" />
+    <state x="595" y="454" width="399" height="155" key="NewPhpFileDialog/0.34.1600.990@0.34.1600.990" timestamp="1596788789371" />
     <state x="289" y="164" width="1022" height="736" key="SettingsEditor" timestamp="1596682955216">
       <screen x="0" y="34" width="1600" height="990" />
     </state>
     <state x="289" y="164" width="1022" height="736" key="SettingsEditor/0.34.1600.990@0.34.1600.990" timestamp="1596682955216" />
-    <state x="463" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1596695915594">
+    <state x="463" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1596772773942">
       <screen x="0" y="34" width="1600" height="990" />
     </state>
-    <state x="463" y="250" width="672" height="678" key="search.everywhere.popup/0.34.1600.990@0.34.1600.990" timestamp="1596695915594" />
+    <state x="463" y="250" width="672" height="678" key="search.everywhere.popup/0.34.1600.990@0.34.1600.990" timestamp="1596772773942" />
   </component>
 </project>
